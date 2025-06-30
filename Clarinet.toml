@@ -1,0 +1,28 @@
+[project]
+name = 'Blockchain-Based-Business-Development-Channel-Management'
+description = ''
+authors = []
+telemetry = true
+cache_dir = './.cache'
+requirements = []
+[contracts.channel-manager-verification]
+path = 'contracts/channel-manager-verification.clar'
+clarity_version = 3
+epoch = 3.1
+
+[contracts.incentive-management]
+path = 'contracts/incentive-management.clar'
+clarity_version = 3
+epoch = 3.1
+[repl.analysis]
+passes = ['check_checker']
+
+[repl.analysis.check_checker]
+strict = false
+trusted_sender = false
+trusted_caller = false
+callee_filter = false
+
+[repl.remote_data]
+enabled = false
+api_url = 'https://api.hiro.so'
